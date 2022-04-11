@@ -1,4 +1,5 @@
 import Nav from "./Nav";
+import Header from "./Header";
 import styles from "../styles/Layout.module.css"; // = former Home.module.css
 
 // everything that lies in this component shows up on every page of the app
@@ -11,6 +12,7 @@ const Layout = ({ children }) => {
       <div className={styles.container}>
         <main className={styles.main}>
           <h1>Hello</h1>
+          <Header />
           {children}
         </main>
       </div>
