@@ -1,11 +1,11 @@
-import Head from "next/head";
+// import Head from "next/head";
 
 const about = () => {
   return (
     <div>
-      <Head>
+      {/* <Head>
         <title>About</title>
-      </Head>
+      </Head> */}
       <h1>About</h1>
     </div>
   );

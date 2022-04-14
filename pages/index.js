@@ -1,15 +1,15 @@
 import { server } from "../config";
-import Head from "next/head"; // this is used for custom titles, meta tags, keywords, descriptions
+// import Head from "next/head"; // this is used for custom titles, meta tags, keywords, descriptions  --> don't need it anymore as I substituted it by Meta.js
 import ArticleList from "../components/ArticleList";
 
 export default function Home({ articles }) {
   console.log(articles);
   return (
     <div>
-      <Head>
+      {/* <Head>
         <title>Web Dev Newz</title>
         <meta name="keywords" content="web development, programming" />
-      </Head>
+      </Head> */}
 
       <ArticleList articles={articles} />
     </div>
