@@ -16,6 +16,19 @@ You can start editing the page by modifying `pages/index.js` in your code editor
 
 <br>
 
+## Key Features
+
+- basic set-up (using npm)
+- folder structure with `/components`, `/pages` (with `/api` and `/articles` subfolders), `/public`, `/styles`
+- `Layout.js` file carries all the styles for all pages - the styles are in `Layout.module.css` (renamed from the default Home.module.css)
+- the `Nav` component is styled individually (therefore placed outside of the main `<div>` in `Layout.js`)
+- `_document.js` file to have access to the html (only rendered in the server)
+- data fetching using `getStaticProps` and `getStaticPaths`
+- nested routes (for individual articles, e.g. /article/1, /article/2 etc.)
+- API routes for getting all articles and for getting a single article (see the following section)
+
+<br>
+
 ## API Routes
 
 [API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/articles](http://localhost:3000/api/articles) and on http://localhost:3000/api/articles/:id. These endpoints can be edited in `pages/api/articles/index.js` and `pages/api/articles/[id].js`.
