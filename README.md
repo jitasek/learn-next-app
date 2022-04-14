@@ -62,3 +62,5 @@ Homepage
 Article detail
 
 ![Image](./components/Images/article-detail.png)
+
+This is just a test.
